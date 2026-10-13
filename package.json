@@ -1,0 +1,17 @@
+{
+  "name": "contrast-ratio-tools",
+  "version": "0.1.0",
+  "description": "WCAG contrast checker that reports AA and AAA ratios with no dependencies",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": "./src/index.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [],
+  "license": "BSD-3-Clause",
+  "dependencies": {}
+}
