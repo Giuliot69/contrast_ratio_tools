@@ -61,3 +61,10 @@ value, so it stays consistent.
 
 Identical colours produce a ratio of exactly 1, and pure black-on-white a
 ratio of exactly 21. These are the two endpoints and both are exact.
+
+## Design notes
+
+The window stores values eagerly rather than keeping running aggregates. Running
+sums drift with floating point over long streams, and recomputing from a small
+buffer is cheap enough that the drift is not worth the speed.
+
